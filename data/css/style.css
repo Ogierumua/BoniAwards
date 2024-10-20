@@ -9,7 +9,7 @@
 
 body {
     font-family: "Jost", sans-serif;
-    background-color:bisque;
+    background-color:rgb(212, 210, 208);
     font-weight: 400;
     color:#555
 }
@@ -58,7 +58,7 @@ a:hover {
     text-transform: uppercase;
     font-size: 11px;
     color: var(--dark-color);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     position: relative;
 
 }
@@ -136,6 +136,13 @@ a:hover {
     }
 }
 
+.fixed-header .main-header {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0.125rem rgba(55, 55, 55, 0.07);
+    
+}
+
 .coloured-btn {
     padding: 8px 20px;
     border: 2px solid var(--primary-color);
@@ -197,5 +204,288 @@ main {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 16px;
-    margin: 0 0 20px;
+    margin: 0 0 30px;
 }
+
+@media (max-width: 767px) {
+    .home-section .home-intro h6{
+        margin: 0 0 20px;
+    }
+    
+}
+
+.home-section .home-intro h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin: 0 0 35px;
+    line-height: 1;
+}
+
+@media (max-width: 1200px) {
+    .home-section .home-intro h1 {
+        font-size: 40px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .home-section .home-intro h1 {
+        margin: 0 0 25;
+        font-size: 30px;
+    }
+    
+}
+
+.home-section .home-intro h1 span {
+    border-bottom: 2px solid red;
+}
+
+.home-section .home-intro p {
+    font-size: 20px;
+}
+
+.home-image img {
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: relative;
+    z-index: -2;
+}
+
+@media (max-width: 767px) {
+    .home-image img {
+        height: 300px;
+        width: 300px;
+    }
+    
+}
+
+.anim-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.anim-elements .anim-element {
+    position: absolute;
+    font-size: 30px;
+}
+
+.anim-elements .anim-element:nth-child(1) {
+    top: 12%;
+    left: 15%;
+    color: var(--primary-color);
+    animation: aniOne 13s infinite linear alternate;
+}
+
+.anim-elements .anim-element:nth-child(2) {
+    bottom: 15%;
+    left: 45%;
+    color: whitesmoke;
+    animation: aniTwo 13s infinite linear alternate;
+}
+
+.anim-elements .anim-element:nth-child(3) {
+    bottom: 20%;
+    left: 30%;
+    color: aliceblue;
+    animation: aniThree 13s infinite linear alternate;
+}
+
+.anim-elements .anim-element:nth-child(4) {
+    bottom: 15%;
+    left: 25%;
+    color: aquamarine;
+    animation: aniOne 13s infinite linear alternate;
+}
+
+.anim-elements .anim-element:nth-child(5) {
+    top: 18%;
+    left: 25%;
+    color: cyan;
+    animation: aniThree 13s infinite linear alternate;
+}
+
+@keyframes aniOne {
+    0%  {transform: translate(0,0) rotate(0);}
+    40% {transform: translate(141px, 72px) rotate(75deg);}
+    80% {transform: translate(-40, 72px) rotate(145deg);}
+    100% {transform: translate(0, 0) rotate(0);}
+}
+
+@keyframes aniTwo {
+    0%  {transform: translate(0,0) rotate(0) scale(1);}
+    20% {transform: translate(73px, -1px) rotate(36deg) scale(.9);}
+    60% {transform: translate(83, 122px) rotate(108deg) scale(1.2);}
+    100% {transform: translate(0, 0) rotate(0) scale(1);}
+}
+
+
+@keyframes aniThree {
+    0%  {transform: translate(-300px, 151px) rotate(0);}
+    100% {transform: translate(251px, -200px) rotate(180deg);}
+
+}
+
+@keyframes aniFour {
+    0%  {transform: translate(61px, -99px) rotate(0);}
+    20% {transform: translate(4px, -190px) rotate(38deg);}
+    60% {transform: translate(-263, -164px) rotate(108deg);}
+    100% {transform: translate(-1px, 0) rotate(180deg);}
+
+}
+
+/*section*/
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .section{
+        padding: 80px 0;
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+    .section{
+        padding: 60px 0;
+    }
+    
+}
+
+.section-heading {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .section-heading{
+        padding-bottom: 40px 0;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .section-heading{
+        padding: 30px 0;
+    }
+    
+}
+
+.section-heading h3 {
+    font-size: 50px;
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 991px) {
+    .section-heading h3 {
+        padding-bottom: 45px 0;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .section-heading h3 {
+        padding: 38px 0;
+    }
+    
+}
+
+.about-text p {
+    font-size: 18px;
+}
+
+.feature-box:hover {
+    box-shadow: 5px 5px 5px 5px white;
+}
+
+@media (max-width: 767px) {
+    .feature-box {
+        padding: 30px;
+    }
+    
+}
+
+.feature-box .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--dark-color);
+    background: #fff;
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+.feature-box .content {
+    max-width: calc(100%  - 70px);
+    padding-left: 20px;
+}
+
+.feature-box h5 {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 15px;
+    color: white;
+    
+    margin: 0;
+}
+
+
+@media (max-width: 767px) {
+    .feature-box h5 {
+        padding: 22px;
+    }
+    
+}
+
+.bg-1 {
+    background-color: black;
+}
+
+.bg-2 {
+    background-color: rgb(146, 138, 138);
+}
+
+.bg-3 {
+    background-color: brown;
+}
+
+.bg-4 {
+    background-color: rgb(77, 77, 63);
+}
+
+.bg-5 {
+    background-color: rgb(99, 79, 79);
+}
+
+.bg-6 {
+    background-color: rgb(75, 37, 37);
+}
+
+
+
+
