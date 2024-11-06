@@ -81,7 +81,8 @@
  </header>
 
 <!-- Header Section -->
-<header class="jumbotron jumbotron-fluid text-center bg-dark text-white">
+<header class="jumbotron jumbotron-fluid text-center bg-dark text-white" style="background-image: 
+url(data/images/awards/18.jpeg); background-repeat: no-repeat; background-size: cover;" >
   <div class="container">
     <h1 class="display-4">BONI Awards Categories</h1>
     <p class="lead">Recognizing outstanding achievements in Nigeria</p>
@@ -222,35 +223,173 @@
 
   
 <!-- Contact Us Section -->
-<section class="container py-5">
-  <h2 class="text-center">Nomination Form</h2>
+<section class="container py-5 text-center" style="background-image: url(data/images/awards/18.jpeg); background-repeat: no-repeat; background-size: cover;">
+  <img src="data/images/boni1.png" alt="" height="200" class="mx-auto d-block mb-3">
+  
+  <h2 class="text-center fw-bold">Award Nomination Form</h2>
+  <p class="fw-bold">Please fill out the award nomination form to nominate a person for </p>
+  <p class="fw-bold">an award. Nominees can be nominated for several categories</p>
+
+  <style>
+    .form-control {
+      background-color: black;
+      color: rgb(107, 101, 101); /* Ensures the input text is visible on the black background */
+      border: 1px solid #ced4da;
+      outline: none;
+      box-shadow: none;
+      border-color: rgb(226, 135, 16); /* Or any color of your choice */
+    }
+  
+    .form-control::placeholder {
+      color: #585b5e; /* Optional: Lighter color for the placeholder */
+    }
+  
+    
+
+  </style>
+  
   <form>
+
+      
+          
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" class="form-control" id="name" placeholder="Enter your name">
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter your email">
-    </div>
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
-    </div>
+
+      <label class=" form-group visually-hidden" for="autoSizingSelect">Preference</label>
+      <label for="Choose The Award">Choose The Award</label>
+      <select class="form-select form-control" id="autoSizingSelect">
+        <option selected  class="form-control">Choose The Award</option>
+        <option value="1"  class="form-control">One</option>
+        <option value="2"  class="form-control">Two</option>
+        <option value="3"  class="form-control">Three</option>
+      </select>
+
+      <h4>Nomination Information</h4>
+      
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name">
     <br>
     <br>
-    <br>
- 
-    <button><a href="./about.html" class="coloured-btn mt-1"> submit</a></button>
+    
+    <button type="submit" class="coloured-btn mt-1">Submit</button>
+
+
+
   </form>
 </section>
 
-</section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-4">
-  <p>&copy; 2024 BONI Awards. All Rights Reserved.</p>
-</footer>
+
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+
+  <!-- Footer -->
+   
+  <footer class="bg-cyan text-white text-center py-4" style="background-image: 
+  url(data/images/awards/18.jpeg); background-repeat: no-repeat; background-size: cover;" >
+    
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-white fw-bold">Home</a></li>
+              <li class="nav-item mb-2"><a href="./ecns.html" class="nav-link p-0 text-white fw-bold">About ENCS</a></li>
+              <li class="nav-item mb-2"><a href="./awardcart.html" class="nav-link p-0 text-white fw-bold">Award Category</a></li>
+              <li class="nav-item mb-2"><a href="./galery.html" class="nav-link p-0 text-white fw-bold">Gallery</a></li>
+              <li class="nav-item mb-2"><a href="./event.html" class="nav-link p-0 text-white fw-bold">Events & Projects</a></li>
+              <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-white fw-bold">Contact Us</a></li>
+            </ul>
+          </div>
+    
+          
+    
+          
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <a href="./about.html" class="coloured-btn mt-1"> Subscribe</a>
+                
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          
+          
+        
+          <ul class="list-unstyled d-flex">
+            
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><i class='bx bxl-facebook-square bx-lg' style="color: white;"></i></a></li>
+
+           
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><i class='bx bxl-instagram bx-lg' style="color: orange;"></i></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"> <i class='bx bxl-twitter bx-lg' style="color: white;"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <p>&copy; 2024 BONI Awards. All Rights Reserved.</p>
+  </footer>
 
    
 
